@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=PT+Sans&display=swap" rel="stylesheet"> 
+
 <title> Anataomia dla adeptów</title>
 <style>
 body { margin-left: 200px;
 	   margin-right: 200px;
 	   background-color:#F5F5F5;
 	   color:black;
+	   font-family: arial;
        <!-- background-image: url("typy-włókien-mięśniowych.jpg"); 
        background-attachment: fixed;
        background-size: cover;
 	   background-size: contain;
 	   background-position: center;
 	   background-repeat: no-repeat;
-	   font-family: arial;-->
+	   -->
 	   
-}
-a { text-decoration: none
 }
 
 div{
@@ -28,7 +31,8 @@ width: auto;
 padding: 20px 50px;
 border: 7px solid #c6ba9f;
 border-style: inset;
-margin: 50px;        
+margin: 50px;   
+font-size:1,2vw;     
 		   }
 .img {text-align: center; background-color:black; padding:25px;}
 
@@ -38,28 +42,53 @@ p{
 text-align: justify;
 text-indent: 50px;
 }
-h1 {text-align: center; color:coral;
+h1 {font-family: 'Chilanka', cursive;
+    text-align: center;
+	color:white;
     border: 3px solid #857550;
     border-radius: 5px;
 	background-color: black;
-	color: white;
+		padding:10px;
 }
+
+h2 {font-family: 'PT Sans' , sans-serif;
+    text-align: center; 
+    color: white;
+    border:3px solid 3857550;
+	border-radius: 5px;
+	background-color: black;
+	padding: 5px;
+	}
 .clearfix {
   overflow: auto;
  }
-
-td,th {
+table {
+border: 1px solid black;
+width:100%; 
+margin-bottom:100px; 
+font-size: 12px;
+}
+tr {
 padding: 5px;
 text-align: left;
-border: 1px solid black;
 border-collapse: collapse;
+border: 1px solid black;
+
 }
+th,td {
+padding:10px;
+border-bottom: 1px solid #ddd
+}
+tr:hover {background-color:#f5f5f5;} <!-- nie działą nie wiem dlaczego z czym to koliduje-->
+
 .kpib{ color:blue}
 .kgp{ color:lightblue}
 .kgt{ color:brown}
 .pl{ color:red}
 .kdp{ color:purple}
 .kdt{ color:green}
+
+
 </style>
 </head>
 <body>
@@ -80,19 +109,22 @@ Nazwa pochodzi od ułożenia się w mięsniu reguralnie włokien mięsniowych kt
 
 
 <h1>Rodzaje skurczów mięśni </h1>
-
-<h1>Skurcz koncentryczny</h1>
+<i class="fas fa-heartbeat" style="font-size:40px;color:red;float: center;"></i> <!--nie moge wyśrodkować-->
+<span class="material-icons" style="font-size:40px;color:#857550;float: center;">
+fitness_center
+</span>
+<h2>Skurcz koncentryczny</h2>
 
 <div class="clearfix" ><img src="skurczK.jpg" style="float:right; width:30%;">
 <p>Skurcz koncentryczny występuje gdy mamy napięcie mięśniowe i  długość mięsienia się skraca. <br>
 W życiu codziennym gdy podnosisz kubek z kawą, pracuje biceps.</p></div>
 
-<h1>Skurcz izometryczny</h1>
+<h2>Skurcz izometryczny</h2>
 <div class="clearfix"><img src="skurczI.jpg" style="float:right; width:30%;">
 <p> Skurcz izometryczny występuje gdy mamy napięcie mięśniowe i  długość mięsie nia się nie zmienia.<br>
 W życiu codziennym gdy chcesz otowrzyć słoik a on ani drgnie, mięśnie przedramion napięte maksymalnie ale ruchu nie ma.</p></div> 
 
-<h1>Skurcz ekscentryczny</h1>
+<h2>Skurcz ekscentryczny</h2>
 <div class="clearfix"><img src="skurczE.jpg"; style="float:right; width:30%"; >
 <p>Skurcz ekscentryczny występuje gdy mamy napięcie mięśniowe i  długość mięsienia się wydłuża.<br>
 W życiu codziennym gdy siadasz na krześle, mięsnie czworogłowe się rozciągaja ale pracują.</p></div>
@@ -109,7 +141,7 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 <img src="energia.jpg"; style="width:30%"; >
 </p>
 
-<table style="width:100%; margin-bottom:100px"; >
+<table>
   <tr>
     <th><img src="mięśnie przód.jpg" style="width:400px;height:600px;"></th>
     <th><img src="mięśnie tył.jpg" style="width:400px;height:600px;"></th> 
@@ -117,7 +149,7 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 
 
 <h1> Mięśnie</h1>
-<table style="width:100%; margin-bottom:100px; font-size:12px;">
+<table>
 <tr>
 <th class="kpib"> Klatka piersiowa i brzuch</th>
 <th class="kgp"> Kończyna górna przód</th>
@@ -136,21 +168,25 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 </tr>
 </table>
 <h1> Główne mięśnie pracujące w danym ćwiczeniu</h1>
-<table style="width:100%; margin-bottom: 100px; ">
+<table>
 <tr>
 <th style="text-align:center;"> Pompki/Wyciskanie leżąc</th>
+<th> coś tam </th>
 <td><span style="color:blue">- m. Piersiowy większy</span><br><span style="color:lightblue">- m. Naramienny przedni akton</span><br><span style="color:brown">- m. Trójgłowy ramienia (triceps)</span></td>
 </tr>
 <tr>
 <th style="text-align:center;">Przysiady</th>
+<th> coś tam </th>
 <td><span style="color:purple">- m. Czworogłowy</span><br><span style="color:purple"> - m. Pośladkowy wielki</span><br><span style="color:red">- m. Prostowniki grzbietu</span></td>
 </tr>
 <tr>
 <th style="text-align:center;"> Podciąganie na drążku</th>
+<th> coś tam </th>
 <td><span style="color:red">- m. Najszerszy grzbietu</span><br><span style="color:red">- m. Czworoboczny</span><br><span style="color:red"> - m. Równoległoboczny</span><br><span style="color:lightblue"> - m. Dwugłowy ramienia (biceps)</span><br></td>
 </tr>
 <tr>
 <th style="text-align:center;"> Martwy ciąg</th>
+<th> coś tam </th>
 <td><span style="color:red">- m. Prostowniki grzbietu</span><br><span style="color:purple">- m. Czworogłowy</span><br><span style="color:green">- m. Pośladkowy wielki</span><br><span style="color:green">- m. Dwugłowy uda</span><br></td>
 </tr>
 </table>
