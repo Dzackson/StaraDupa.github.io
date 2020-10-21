@@ -22,6 +22,7 @@ body { margin-left: 200px;
 	   
 }
 
+
 div{
 background-color:lightgray;
 outline: #605439 solid 10px;
@@ -34,6 +35,16 @@ border-style: inset;
 margin: 50px;   
 font-size:1,2vw;     
 		   }
+		   
+div.przylepa {
+position: -webkit-sticky;
+position: sticky;
+top:0;
+padding: 5px';
+background-color: black;
+color:white;
+border:2px solid #857550;
+}		   
 .img {text-align: center; background-color:black; padding:25px;}
 
 mark { background-color: #857550;
@@ -77,9 +88,10 @@ border: 1px solid black;
 }
 th,td {
 padding:10px;
-border-bottom: 1px solid #ddd
+border-collapse: collapse;
+border-bottom: 1px solid #ddd;
 }
-tr:hover {background-color:#f5f5f5;} <!-- nie działą nie wiem dlaczego z czym to koliduje-->
+tr:hover {background-color:#cccccc;} 
 
 .kpib{ color:blue}
 .kgp{ color:lightblue}
@@ -96,6 +108,11 @@ tr:hover {background-color:#f5f5f5;} <!-- nie działą nie wiem dlaczego z czym 
 <section class="img">
  <a href="http://www.twojtrener.eu"><img  src="jacek.jpg"; alt="logo"; style="width:20%;" ></a>
 	</section>
+<div class="przylepa">
+<p> I Ty możesz zostać małym anatomem!</p>
+</div>
+
+
 <div>
 <p><strong>Mięsień</strong> (łac. musculus) – kurczliwy narząd, jeden ze strukturalnych i funkcjonalnych elementów narządu ruchu, stanowiący jego element czynny. Jego kształt i budowa zależy od roli pełnionej w organizmie.Mięśnie zbudowane są z tkanki mięśniowej. Połączone z elementami szkieletu, w wyniku skurczów mięśniowych kurczą się i rozkurczają, powodując ruchy poszczególnych elementów szkieletu względem siebie. Źródłem energii, z którego korzysta mięsień, jest zmagazynowany w nim glikogen lub glukoza dostarczona przez krew. Działanie mięśni uzależnione jest od oporu stawianego przez szkielet (hydrostatyczny lub twardy).
 Liczba mięśni człowieka jest określana na 450–500. U mężczyzn mięśnie stanowią około 40% masy ciała, a u kobiet około 35%</p></div>
@@ -133,7 +150,8 @@ W życiu codziennym gdy siadasz na krześle, mięsnie czworogłowe się rozciąg
 <div>
 <p>Mięsnie szkieletowe(poprzecznie prążkowane) możemy podzielić na dwa typy.<br>
 Włokna mięśniowe typu I to <strong>włokna czerwone</strong>, wolnokurczliwe. Włokna te charakteryzują się długim czasem pracy,<br> mają odcień czerwony ponieważ posiadają duża ilość mioglobiny, białka które jest odpowiedzialne za magazynowanie tlenu w komurkach mięsni.<br>
-Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. Włokna te charakteryzują się krótkim czasem pracy od 2 min. </p></div>
+Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. Włokna te charakteryzują się krótkim czasem pracy od 2 min. </p>
+</div>
 
 <h1>Energetyka mięśni</h1>
 <p> ATP -> ATP-PC -> kwas mlekowy -> utlenianie kwasów tłuszczowych </p>
@@ -141,56 +159,73 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 <img src="energia.jpg"; style="width:30%"; >
 </p>
 
+<div style="overflow-x:auto;">
 <table>
   <tr>
     <th><img src="mięśnie przód.jpg" style="width:400px;height:600px;"></th>
     <th><img src="mięśnie tył.jpg" style="width:400px;height:600px;"></th> 
    </tr>
+   </table>
+</div>
 
 
 <h1> Mięśnie</h1>
-<table>
-<tr>
-<th class="kpib"> Klatka piersiowa i brzuch</th>
-<th class="kgp"> Kończyna górna przód</th>
-<th class="kgt"> Kończyna górna tył</th>
-<th class="pl"> Plecy</th>
-<th class="kdp"> Kończyna dolna przód</th>
-<th class="kdt"> Kończyna dolna tył</th>
-</tr>
-<tr>
-<td class="kpib">- m. Piersiowy większy<br> - m. Piersiowy mniejszy<br> - m. Zębaty przedni<br> - m. Prosty brzucha<br> - m. Skośny Zewnętrzny i wewnętrzny<br> - m. Poprzeczny brzucha</td>
-<td class="kgp">- m. Naramienny przedni akton<br> - m. Dwugłowy ramienia (biceps)<br> - m. Ramienny<br> - m. Zginacze palców</td>
-<td class="kgt">- m. Naramienny tylni akton<br> - m. Trójgłowy ramienia (triceps)<br>- m. Prostowniki palców</td>
-<td class="pl">- m. Czworoboczny<br> - m. Równoległoboczny<br> - m. Obły większy<br>- m. Najszerszy grzbietu<br>- m. Prostowniki grzbietu</td>
-<td class="kdp">- m. Czworogłowy<br>- m. Krawiecki<br>- m. przywodziciele uda<br>- m. Piszczelowy przedni<br>- m. Strzałkowy długi</td>
-<td class="kdt">- m. Pośladkowy wielki<br>- m. Pośladkowy średni<br>- m. Pośladkowy mały<br>- m. Dwugłowy uda<br>- m. Półścięgnisty<br>- m. Półbłoniasty<br>- m. Brzuchaty łydki<br>- m. Płaszczkowaty łydki</td>
-</tr>
-</table>
+
+<div style="overflow-x:auto;">
+   <table>
+     <tr>
+      <th class="kpib"> Klatka piersiowa i brzuch</th>
+      <th class="kgp"> Kończyna górna przód</th>
+      <th class="kgt"> Kończyna górna tył</th>
+      <th class="pl"> Plecy</th>
+      <th class="kdp"> Kończyna dolna przód</th>
+      <th class="kdt"> Kończyna dolna tył</th>
+	  <th> Przedramie </th>
+	  <th> Ręka </th>
+	  <th> Stopa </th>
+	  <th> Głowa </th>
+     </tr>
+     <tr>
+      <td class="kpib">- m. Piersiowy większy<br> - m. Piersiowy mniejszy<br> - m. Zębaty przedni<br> - m. Prosty brzucha<br> - m. Skośny Zewnętrzny i wewnętrzny<br> - m. Poprzeczny brzucha</td>
+      <td class="kgp">- m. Naramienny przedni akton<br> - m. Dwugłowy ramienia (biceps)<br> - m. Ramienny<br> - m. Zginacze palców</td>
+      <td class="kgt">- m. Naramienny tylni akton<br> - m. Trójgłowy ramienia (triceps)<br>- m. Prostowniki palców</td>
+      <td class="pl">- m. Czworoboczny<br> - m. Równoległoboczny<br> - m. Obły większy<br>- m. Najszerszy grzbietu<br>- m. Prostowniki grzbietu</td>
+      <td class="kdp">- m. Czworogłowy<br>- m. Krawiecki<br>- m. przywodziciele uda<br>- m. Piszczelowy przedni<br>- m. Strzałkowy długi</td>
+      <td class="kdt">- m. Pośladkowy wielki<br>- m. Pośladkowy średni<br>- m. Pośladkowy mały<br>- m. Dwugłowy uda<br>- m. Półścięgnisty<br>- m. Półbłoniasty<br>- m. Brzuchaty łydki<br>- m. Płaszczkowaty łydki</td>
+      <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  
+	 </tr>
+    </table>
+</div>
+
 <h1> Główne mięśnie pracujące w danym ćwiczeniu</h1>
+<div style="margin: 50px">
 <table>
 <tr>
 <th style="text-align:center;"> Pompki/Wyciskanie leżąc</th>
-<th> coś tam </th>
+
 <td><span style="color:blue">- m. Piersiowy większy</span><br><span style="color:lightblue">- m. Naramienny przedni akton</span><br><span style="color:brown">- m. Trójgłowy ramienia (triceps)</span></td>
 </tr>
 <tr>
 <th style="text-align:center;">Przysiady</th>
-<th> coś tam </th>
+
 <td><span style="color:purple">- m. Czworogłowy</span><br><span style="color:purple"> - m. Pośladkowy wielki</span><br><span style="color:red">- m. Prostowniki grzbietu</span></td>
 </tr>
 <tr>
 <th style="text-align:center;"> Podciąganie na drążku</th>
-<th> coś tam </th>
+
 <td><span style="color:red">- m. Najszerszy grzbietu</span><br><span style="color:red">- m. Czworoboczny</span><br><span style="color:red"> - m. Równoległoboczny</span><br><span style="color:lightblue"> - m. Dwugłowy ramienia (biceps)</span><br></td>
 </tr>
 <tr>
 <th style="text-align:center;"> Martwy ciąg</th>
-<th> coś tam </th>
+
 <td><span style="color:red">- m. Prostowniki grzbietu</span><br><span style="color:purple">- m. Czworogłowy</span><br><span style="color:green">- m. Pośladkowy wielki</span><br><span style="color:green">- m. Dwugłowy uda</span><br></td>
 </tr>
 </table>
-
+</div>
 
 
 
