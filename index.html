@@ -30,6 +30,8 @@ background-color: black;
 text-align: center;
 margin:0;
 padding:10px;
+color:white;
+border:2px solid #857550;
 }
 .nav li{
 display:inline-block;
@@ -52,16 +54,7 @@ font-size:1,2vw;
 }
 div.no-border { border: 0 }
   
-div.przylepa {
-position: -webkit-sticky;
-position: sticky;
-top:60px;
-outline: none;
-padding: 5px;
-background-color: black;
-color:white;
-border:2px solid #857550;
-}
+
 		   
 .img {text-align: center; background-color:black; padding:25px;}
 
@@ -138,18 +131,17 @@ a:active {
 </head>
 <body>
 <ul class="nav";>
- <li> <a href='#home'>Home</a></li>
- <li><a href='#omnie'>O mnie</a></li>
- <li><a href='#polecenia'>Polecenia</a></li>
- <li><a href='#kontkat'>Kontakt</a></li>
+ <li><a href='#home'>Home</a></li>
+ <li><a href='#energetyka'>Energetyka mięśni</a></li>
+ <li><a href='#miesnie'>Mięśnie</a></li>
+ <li><a href='#glmi'>Główne mięśnie</a></li>
 </ul>
 
 <section class="img">
+<div id="home">
  <a href="http://www.twojtrener.eu"><img  src="jacek.jpg"; alt="logo"; style="width:20%;" ></a>
+ </div>
 	</section>
-<div class="przylepa">
-<p> I Ty możesz zostać małym anatomem!</p>
-</div>
 
 
 <div class="border";>
@@ -192,7 +184,7 @@ Włokna mięśniowe typu I to <strong>włokna czerwone</strong>, wolnokurczliwe.
 Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. Włokna te charakteryzują się krótkim czasem pracy od 2 min. </p>
 </div>
 
-<h1>Energetyka mięśni</h1>
+<h1 id="energetyka">Energetyka mięśni</h1>
 <p> ATP -> ATP-PC -> kwas mlekowy -> utlenianie kwasów tłuszczowych </p>
 <p style="text-align: center;">
 <img src="energia.jpg"; style="width:30%"; >
@@ -208,7 +200,7 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 </div>
 
 
-<h1> Mięśnie</h1>
+<h1 id="miesnie"> Mięśnie</h1>
 
 <div style="overflow-x:auto;">
    <table>
@@ -240,7 +232,7 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
     </table>
 </div>
 
-<h1> Główne mięśnie pracujące w danym ćwiczeniu</h1>
+<h1 id="glmi"> Główne mięśnie pracujące w danym ćwiczeniu</h1>
 <div style="margin: 50px">
 <table>
 <tr>
