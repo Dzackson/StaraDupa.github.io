@@ -21,9 +21,24 @@ body { margin-left: 200px;
 	   -->
 	   
 }
+.nav{
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+outline: none;
+background-color: black;
+text-align: center;
+margin:0;
+padding:10px;
+}
+.nav li{
+display:inline-block;
+font-size:20px;
+padding:10px;
+}
 
 
-div{
+div.border{
 background-color:lightgray;
 outline: #605439 solid 10px;
 outline-style: outset;
@@ -34,17 +49,20 @@ border: 7px solid #c6ba9f;
 border-style: inset;
 margin: 50px;   
 font-size:1,2vw;     
-		   }
-		   
+}
+div.no-border { border: 0 }
+  
 div.przylepa {
 position: -webkit-sticky;
 position: sticky;
-top:0;
+top:60px;
+outline: none;
 padding: 5px;
 background-color: black;
 color:white;
 border:2px solid #857550;
-}		   
+}
+		   
 .img {text-align: center; background-color:black; padding:25px;}
 
 mark { background-color: #857550;
@@ -59,7 +77,7 @@ h1 {font-family: 'Chilanka', cursive;
     border: 3px solid #857550;
     border-radius: 5px;
 	background-color: black;
-		padding:10px;
+	padding:10px;
 }
 
 h2 {font-family: 'PT Sans' , sans-serif;
@@ -100,10 +118,31 @@ tr:hover {background-color:#cccccc;}
 .kdp{ color:purple}
 .kdt{ color:green}
 
+a{
+  text-decoration: none;
+}
+a:link {
+  color: #857550;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: yellow;
+}
+a:active {
+  color: blue;
+}
 
 </style>
 </head>
 <body>
+<ul class="nav";>
+ <li> <a href='#home'>Home</a></li>
+ <li><a href='#omnie'>O mnie</a></li>
+ <li><a href='#polecenia'>Polecenia</a></li>
+ <li><a href='#kontkat'>Kontakt</a></li>
+</ul>
 
 <section class="img">
  <a href="http://www.twojtrener.eu"><img  src="jacek.jpg"; alt="logo"; style="width:20%;" ></a>
@@ -113,14 +152,14 @@ tr:hover {background-color:#cccccc;}
 </div>
 
 
-<div>
+<div class="border";>
 <p><strong>Mięsień</strong> (łac. musculus) – kurczliwy narząd, jeden ze strukturalnych i funkcjonalnych elementów narządu ruchu, stanowiący jego element czynny. Jego kształt i budowa zależy od roli pełnionej w organizmie.Mięśnie zbudowane są z tkanki mięśniowej. Połączone z elementami szkieletu, w wyniku skurczów mięśniowych kurczą się i rozkurczają, powodując ruchy poszczególnych elementów szkieletu względem siebie. Źródłem energii, z którego korzysta mięsień, jest zmagazynowany w nim glikogen lub glukoza dostarczona przez krew. Działanie mięśni uzależnione jest od oporu stawianego przez szkielet (hydrostatyczny lub twardy).
 Liczba mięśni człowieka jest określana na 450–500. U mężczyzn mięśnie stanowią około 40% masy ciała, a u kobiet około 35%</p></div>
 <h1>Podział mięśni</h1>
-<div>
+<div class="border";>
 <p> <strong>Mięśnie możemy podzielić na:</strong><br>-głądkie<br>-poprzecznie prążkowane.<br></p>
-<p><a href="https://www.google.com/search?client=firefox-b-d&q=mi%C4%99%C5%9Bnie+g%C5%82adkie"><mark>Mięśnie gładkie</mark></a> to takie mięsnie którymi nie możemy sterować z własnej woli, np. mięsnie w naczyniach krwionośnych czy w układzie pokarmowym.<br>
-<a href="https://www.google.com/search?client=firefox-b-d&q=mi%C4%99%C5%9Bnie+poprzecznie+pr%C4%85%C5%BCkowane"><mark>Mięśnie poprzecznie prążkowane</mark></a> to takie który możemy sterować i je napinać, wszystkie mięsnie szkieletowe, np mięsnie twarzy.<br>
+<p><a href="https://www.google.com/search?client=firefox-b-d&q=mi%C4%99%C5%9Bnie+g%C5%82adkie">Mięśnie gładkie</a> to takie mięsnie którymi nie możemy sterować z własnej woli, np. mięsnie w naczyniach krwionośnych czy w układzie pokarmowym.<br>
+<a href="https://www.google.com/search?client=firefox-b-d&q=mi%C4%99%C5%9Bnie+poprzecznie+pr%C4%85%C5%BCkowane">Mięśnie poprzecznie prążkowane</a> to takie który możemy sterować i je napinać, wszystkie mięsnie szkieletowe, np mięsnie twarzy.<br>
 Nazwa pochodzi od ułożenia się w mięsniu reguralnie włokien mięsniowych które w obrazie pod mikroskopem dają obraz prążkowany.
 </div></p>
 
@@ -132,22 +171,22 @@ fitness_center
 </span>
 <h2>Skurcz koncentryczny</h2>
 
-<div class="clearfix" ><img src="skurczK.jpg" style="float:right; width:30%;">
+<div class="border clearfix;" ><img src="skurczK.jpg" style="float:right; width:30%;">
 <p>Skurcz koncentryczny występuje gdy mamy napięcie mięśniowe i  długość mięsienia się skraca. <br>
 W życiu codziennym gdy podnosisz kubek z kawą, pracuje biceps.</p></div>
 
 <h2>Skurcz izometryczny</h2>
-<div class="clearfix"><img src="skurczI.jpg" style="float:right; width:30%;">
+<div class="border clearfix;"><img src="skurczI.jpg" style="float:right; width:30%;">
 <p> Skurcz izometryczny występuje gdy mamy napięcie mięśniowe i  długość mięsie nia się nie zmienia.<br>
 W życiu codziennym gdy chcesz otowrzyć słoik a on ani drgnie, mięśnie przedramion napięte maksymalnie ale ruchu nie ma.</p></div> 
 
 <h2>Skurcz ekscentryczny</h2>
-<div class="clearfix"><img src="skurczE.jpg"; style="float:right; width:30%"; >
+<div class="border clearfix;"><img src="skurczE.jpg"; style="float:right; width:30%"; >
 <p>Skurcz ekscentryczny występuje gdy mamy napięcie mięśniowe i  długość mięsienia się wydłuża.<br>
 W życiu codziennym gdy siadasz na krześle, mięsnie czworogłowe się rozciągaja ale pracują.</p></div>
 
 <h1>Mięśnie szkieletowe a typy włókien</h1>
-<div>
+<div class="border";>
 <p>Mięsnie szkieletowe(poprzecznie prążkowane) możemy podzielić na dwa typy.<br>
 Włokna mięśniowe typu I to <strong>włokna czerwone</strong>, wolnokurczliwe. Włokna te charakteryzują się długim czasem pracy,<br> mają odcień czerwony ponieważ posiadają duża ilość mioglobiny, białka które jest odpowiedzialne za magazynowanie tlenu w komurkach mięsni.<br>
 Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. Włokna te charakteryzują się krótkim czasem pracy od 2 min. </p>
