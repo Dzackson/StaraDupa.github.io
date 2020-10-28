@@ -24,13 +24,11 @@ body { margin-left: 200px;
 .nav{
 position: -webkit-sticky;
 position: sticky;
-position: relative;
-top: -50px;
+top: 0;
 outline: none;
 background-color: black;
 text-align: center;
 margin:0;
-padding:10px;
 color:white;
 border:2px solid #857550;
 }
@@ -127,7 +125,10 @@ a:hover {
 a:active {
   color: blue;
 }
-
+.anchor{
+display: block;
+height: 30px;
+}
 </style>
 </head>
 <body>
@@ -137,9 +138,10 @@ a:active {
  <li><a href='#miesnie'>Mięśnie</a></li>
  <li><a href='#glmi'>Główne mięśnie</a></li>
 </ul>
-
+<a name="home" class="anchor"></a>
 <section class="img">
-<div id="home">
+
+<div>
  <a href="http://www.twojtrener.eu"><img  src="jacek.jpg"; alt="logo"; style="width:20%;" ></a>
  </div>
 	</section>
@@ -184,8 +186,8 @@ W życiu codziennym gdy siadasz na krześle, mięsnie czworogłowe się rozciąg
 Włokna mięśniowe typu I to <strong>włokna czerwone</strong>, wolnokurczliwe. Włokna te charakteryzują się długim czasem pracy,<br> mają odcień czerwony ponieważ posiadają duża ilość mioglobiny, białka które jest odpowiedzialne za magazynowanie tlenu w komurkach mięsni.<br>
 Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. Włokna te charakteryzują się krótkim czasem pracy od 2 min. </p>
 </div>
-
-<h1 id="energetyka">Energetyka mięśni</h1>
+<a name="energetyka" class="anchor"></a>
+<h1>Energetyka mięśni</h1>
 <p> ATP -> ATP-PC -> kwas mlekowy -> utlenianie kwasów tłuszczowych </p>
 <p style="text-align: center;">
 <img src="energia.jpg"; style="width:30%"; >
@@ -200,8 +202,8 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
    </table>
 </div>
 
-
-<h1 id="miesnie"> Mięśnie</h1>
+<a name="miesnie" class="anchor"</a>
+<h1> Mięśnie</h1>
 
 <div style="overflow-x:auto;">
    <table>
@@ -232,8 +234,8 @@ Włókna typu IIa i IIb to <strong>włokna białe</strong> , szybkokurczliwe. W�
 	 </tr>
     </table>
 </div>
-
-<h1 id="glmi"> Główne mięśnie pracujące w danym ćwiczeniu</h1>
+<a name="glmi" class="anchor"></a>
+<h1> Główne mięśnie pracujące w danym ćwiczeniu</h1>
 <div style="margin: 50px">
 <table>
 <tr>
