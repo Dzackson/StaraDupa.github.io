@@ -148,3 +148,13 @@ a:active {
   display: block;
   height: 30px;
 }
+div.facebook {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #2489db;
+}
