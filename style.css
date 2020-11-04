@@ -3,7 +3,7 @@ body {
   margin-right: 100px;
   background-color: #f5f5f5;
   color: black;
-  font-family: arial;
+  font-family: "Lato", sans-serif;
 }
 .nav {
   position: -webkit-sticky;
@@ -62,7 +62,7 @@ p {
   text-indent: 50px;
 }
 h1 {
-  font-family: "Chilanka", cursive;
+  font-family: "Lato", "sans-serif";
   text-align: center;
   color: white;
   border: 3px solid #857550;
@@ -159,14 +159,49 @@ div.facebook {
   border: 1px solid #2489db;
   padding: 4px 0 0 4px;
 }
-div.insta {
+div.facebook_black {
   position: fixed;
+  z-index: -1;
   right: 0;
-  top: 131px;
+  top: 60px;
   padding: 0;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px solid #2489db;
+  padding: 4px 0 0 4px;
+}
+div.insta {
+  position: fixed;
+  right: 0;
+  top: 161px;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #e1306c;
+  padding: 4px 0 0 4px;
+}
+div.facebook:hover {
+  position: fixed;
+  z-index: -10;
+  right: 0;
+  top: 60px;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 3px solid black;
+  padding: 4px 0 0 4px;
+}
+div.insta:hover {
+  position: fixed;
+  right: 0;
+  top: 161px;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 3px solid #e1306c;
   padding: 4px 0 0 4px;
 }
