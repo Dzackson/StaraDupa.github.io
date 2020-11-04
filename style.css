@@ -149,7 +149,7 @@ a:active {
   height: 30px;
 }
 div.facebook {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 60px;
   padding: 0;
