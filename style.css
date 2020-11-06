@@ -182,26 +182,21 @@ div.insta {
   border: 1px solid #e1306c;
   padding: 4px 0 0 4px;
 }
-div.facebook:hover {
+div.insta_black {
   position: fixed;
-  z-index: -10;
-  right: 0;
-  top: 60px;
-  padding: 0;
-  margin: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border: 3px solid black;
-  padding: 4px 0 0 4px;
-}
-div.insta:hover {
-  position: fixed;
+  z-index: -1;
   right: 0;
   top: 161px;
   padding: 0;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 3px solid #e1306c;
+  border: 1px solid #000000;
   padding: 4px 0 0 4px;
+}
+div.facebook:hover {
+  display: none;
+}
+div.insta:hover {
+  display: none;
 }
