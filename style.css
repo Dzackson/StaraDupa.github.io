@@ -47,6 +47,14 @@ div.box {
 div.no-border {
   border: 0;
 }
+div.typy {
+  width: 264px;
+  height: 165px;
+  text-align: center;
+  border: 2px solid black;
+  background-size: 264px 200px;
+  background-image: url("images/typy-włókien-mięśniowych.jpg");
+}
 
 .img {
   text-align: center;
