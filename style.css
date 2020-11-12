@@ -21,7 +21,27 @@ body {
   font-size: 20px;
   padding: 10px;
 }
-
+.dropdown {
+  position: sticky;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  min-width: 160px;
+  box-shadow: 10px 10px 10px #888888;
+  z-index: 1;
+}
+.dropdown-content a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 div.border {
   background-color: lightgray;
   outline: #605439 solid 10px;
